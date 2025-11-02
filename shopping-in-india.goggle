@@ -1,0 +1,43 @@
+! name: shopping-in-india
+! description: Generic shopping in India — boost reputable Indian retailers & India-focused review/price-comparison sources; tone down coupons/pinboards.
+! public: false
+! author: IntentHQ Labs
+
+# Core multi-category retailers (IN)
+$boost=5,site=amazon.in
+$boost=5,site=flipkart.com
+$boost=4,site=croma.com        # Electronics retailer (Tata Group) 
+$boost=4,site=reliancedigital.in
+$boost=3,site=tatacliq.com
+
+# Fashion & beauty
+$boost=3,site=myntra.com
+$boost=3,site=ajio.com
+$boost=3,site=nykaa.com
+
+# Home & sports (broad)
+|https://www.ikea.com/in/ $boost=2
+$boost=2,site=pepperfry.com
+$boost=2,site=decathlon.in
+
+# India-focused tech reviews & price comparison
+$boost=4,site=gadgets360.com
+$boost=3,site=digit.in
+$boost=3,site=91mobiles.com
+$boost=3,site=smartprix.com
+$boost=2,site=mysmartprice.com
+$boost=2,site=pricebaba.com
+
+# Helpful patterns for commerce intent
+/compare/*$boost=2
+*/review/*$boost=1
+/best*$boost=1
+/top-*$boost=1
+
+# Tone down low-signal pages for shopping queries
+$downrank=6,site=pinterest.com
+$downrank=3,site=quora.com
+/coupon*$downrank=4
+/promo-code*$downrank=4
+/offer-code*$downrank=3
+/deals*$downrank=2
