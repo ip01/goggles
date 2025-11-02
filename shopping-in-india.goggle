@@ -6,7 +6,7 @@
 # Core multi-category retailers (IN)
 $boost=5,site=amazon.in
 $boost=5,site=flipkart.com
-$boost=4,site=croma.com
+$boost=4,site=croma.com        # Electronics retailer (Tata Group) 
 $boost=4,site=reliancedigital.in
 $boost=3,site=tatacliq.com
 
