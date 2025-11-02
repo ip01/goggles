@@ -1,7 +1,7 @@
 ! name: shopping-in-india
 ! description: Generic shopping in India — boost reputable Indian retailers & India-focused review/price-comparison sources; tone down coupons/pinboards.
 ! public: false
-! author: IntentHQ Labs
+! author: Igor
 
 # Core multi-category retailers (IN)
 $boost=5,site=amazon.in
